@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+    <header class="fixed top-0 bg-transparent w-full z-[9]">
+        <nav class="px-32 xl:px-8 md:px-8 sm:px-4 py-10 md:py-6 flex justify-between items-center">
+            <div class="nav_logo">
+                <a href="#">
+                    <img src="../assets/images/nav-logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="flex md:hidden items-center">
+                <li class="nav-link active"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#" class="nav-links">About Us</a></li>
+                <li class="nav-link"><a href="#" class="nav-links">Services</a></li>
+                <li class="nav-link"><a href="#" class="nav-links">Projects</a></li>
+                <li class="nav-link"><a href="#" class="nav-links">Pricing</a></li>
+                <li class="nav-link"><a href="#" class="nav-links">Contact Us</a></li>
+                <a href="#" class="btn btn-ylw">Lets Talk</a>
+            </ul>
+            <button class="hidden md:flex menu_btn">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
+
+    <aside class="sidebar fixed top-0 -right-full bg-[#4646B6]/75 backdrop-blur-md z-10 w-full h-screen hidden md:flex ">
+       <div class="w-full py-6 px-8">
+            <div class="close_btn flex justify-end ">
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div class="w-full h-full flex items-center justify-center text-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <a href="#" class="btn btn-ylw">Let’s Talk</a>
+                </ul>
+            </div>
+       </div>
+    </aside>
+
+    <main>
+        <!-- ========================================================== HERO SECTION ========================================================== -->
+        
+        <section class="herosection h-screen md:h-auto bg-[#4646B6] pt-[80px]">
+            <div class="h-full w-full items-center flex flex-col justify-center">
+                <div class="flex items-center md:items-start flex-row md:flex-col-reverse w-full h-full md:py-8 px-32 xl:px-8 md:px-8 sm:px-4 gap-6 justify-center">
+                    <div class="w-6/12 md:w-full flex items-center">
+                        <div class="banner-content w-full md:pb-[40px]">
+                            <div class="title-white whitespace-nowrap">
+                                <h1>
+                                    Renewable<br> 
+                                    <span>Energy Solutions</span><br> 
+                                    for a Future
+                                </h1>
+                            </div>
+                            <div class="content content-gray mt-8 md:mt-6 max-w-[530px]">
+                                <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis id velit sed scelerisque.</p>
+                            </div>
+                            <div class="flex items-center mt-10 md:mt-8 space-x-6">
+                                <div class="flex">
+                                    <a href="#" class="btn btn-white">Get started</a>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <img src="../assets/images/playbtn.png" width="45" height="45" alt="play_btn" class="cursor-pointer">
+                                    <div class="flex flex-col content-white">
+                                        <p class="leading-4 text-[12px]">Let’s See <br>
+                                            How It Works</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6/12 md:w-full flex justify-end md:justify-start relative h-full gridimg">
+                        <div class="innerdiv flex items-end justify-end md:flex-col md:items-start relative w-full h-full">
+                            <div class="w-[30vw] lg:w-[35vw] md:w-full h-[56vh]"> 
+                                <img src="../assets/images/solar_farm.jpeg" id="solar_img" class="object-cover w-full h-full" alt="">
+                            </div>
+                            <div class="absolute md:static top-[25%] right-[0%] md:mt-4">
+                                <div class="link-white">
+                                    <a href="#">See our latest projects</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute p-[27px] left-[10%] top-[22%] bg-[#0C0C1C] md:top-0 md:left-0">
+                            <div class="content title-white">
+                                <h3 class="font-[600]">20%</h3>
+                               <div class="content-white">
+                                    <p>Increase Clean</p>
+                                    <p>Energy</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- ========================================================== COUNT SECTION ========================================================== -->
+
+        <section class="count_section bg-[#0C0C1C] py-20 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4">
+            <div class="grid grid-cols-4 lg:grid-cols-2  justify-items-center gap-8">
+                <div>
+                    <div class="content text-center">
+                        <div class="title-white">
+                            <h2 class="counter font-[600]" data-target="10" data-suffix="+">0</h2>
+                        </div>
+                        <div class="content-gray">
+                            <p class="mt-4 text-[#E4E4FF]">Years Of Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="content text-center">
+                        <div class="title-white">
+                            <h2 class="counter font-[600]" data-target="20" data-suffix="+">0</h2>
+                        </div>
+                        <div class="content-gray">
+                            <p class="mt-4">Countries Served</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="content text-center">
+                        <div class="title-white">
+                            <h2 class="counter font-[600]" data-target="18" data-suffix="k">0</h2>
+                        </div>
+                        <div class="content-gray">
+                            <p class="mt-4">Successful Installations</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="content text-center">
+                        <div class="title-white">
+                            <h2 class="counter font-[600]" data-target="250" data-suffix="">0</h2>
+                        </div>
+                        <div class="content-gray">
+                            <p class="mt-4">Professional Worker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- ========================================================== ABOUT SECTION ========================================================== -->
+        
+        <section class="about_section py-20 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4">
+            <div class="text-center fade-up">
+                <div class="preheading">
+                    <span>About Us</span>
+                </div>
+                <div class="title-black font-[600] mt-4  flex justify-center max-w-[610px] lg:max-w-[550px] md:max-w-[430px] sm:max-w-[333px] mx-auto">
+                     <h3>Powering a Sustainable Future Together</h3>   
+                </div>
+                <div class="content content-darkgray font-[400] mt-4 max-w-[543px] mx-auto">
+                    <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.Aenean sed elit mattis sagittis id velit sed scelerisque. </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8 mt-16 md:mt-10 justify-items-center">
+                <div class="fade-in max-w-[367px] h-[554px] relative grayscale hover:grayscale-0 transition-all duration-300 ease-in-out cursor-pointer">
+                    <img src="../assets/images/cardimg.jpg" class="w-full h-full object-cover " alt="">
+                    <div class="absolute py-4 px-6 bottom-0 ">
+                        <div class="title-white">
+                            <h4>Renewable</h4>
+                        </div>
+                        <div class="content content-gray mt-3 line-clamp-3 max-w-[290px]">
+                            <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in max-w-[367px] h-[554px] relative grayscale hover:grayscale-0 transition-all duration-300 ease-in-out cursor-pointer">
+                    <img src="../assets/images/mountains.jpg" class="w-full h-full object-cover " alt="">
+                    <div class="content absolute py-4 px-6 bottom-0 ">
+                        <div class="title-white">
+                            <h4>Energy</h4>
+                        </div>
+                        <div class="content content-gray mt-3 line-clamp-3 max-w-[290px]">
+                            <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in max-w-[367px] h-[554px] relative grayscale hover:grayscale-0 transition-all duration-300 ease-in-out cursor-pointer">
+                    <img src="../assets/images/candle.webp" class="w-full h-full object-cover " alt="">
+                    <div class="content absolute py-4 px-6 bottom-0 ">
+                        <div class="title-white">
+                            <h4>Future</h4>
+                        </div>
+                        <div class="content content-gray mt-3 line-clamp-3 max-w-[290px]">
+                            <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- ========================================================== SERVICE SECTION ========================================================== -->
+
+        <section class="service_section bg-light-gray py-20 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4">
+            <div class="text-center max-w-[796px] lg:max-w-[700px] md:max-w-[600px] sm:max-w-[510px] mx-auto fade-up">
+                <div class="preheading">
+                    <span>Our Services</span>
+                </div>
+                <div class="title-black font-[600] mt-4">
+                    <h3>Explore Our Range of Solar and Renewable Energy Services</h3>
+                </div>
+                <div class="content content-darkgray font-[400] mt-4">
+                    <p>Non sed potenti lorem id lorem porttitor nibh enim tincidunt. Eleifend feugiat euismod dictum purus. Imperdiet pellentesque praesent ut condimentum erat maecenas quam quam.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8 mt-16 md:mt-10 justify-items-center">
+                <div class="service_card flex flex-col max-w-[367px] sm:max-w-[340px]">
+                    <div class="bg-white p-[38px] md:p-[20px]">
+                        <div>
+                            <div class="title-blue">
+                                <h5>Grid-tied Systems</h4>
+                            </div>
+                            <div class="content content-darkgray mt-4 line-clamp-3">
+                                <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis.</p>
+                            </div>
+                            <div class="link-green mt-4">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" max-h-[272px] h-[272px]"> 
+                        <img src="../assets/images/grey-img.png" class="h-full w-full object-cover" alt="">
+                    </div>
+                </div>
+                <div class="service_card flex flex-col max-w-[367px] sm:max-w-[340px]">
+                    <div class="bg-white p-[38px] md:p-[20px]">
+                        <div>
+                            <div class="title-blue">
+                                <h5>Off-Grid Systems</h4>
+                            </div>
+                            <div class="content content-darkgray">
+                                <p class="mt-4 line-clamp-3">Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis.</p>
+                            </div>
+                            <div class="link-green mt-4">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" max-h-[272px] h-[272px]"> 
+                        <img src="../assets/images/grey-img.png" class="h-full w-full object-cover" alt="">
+                    </div>
+                </div>
+                <div class="service_card flex flex-col max-w-[367px] sm:max-w-[340px]">
+                    <div class="bg-white p-[38px] md:p-[20px]">
+                        <div>
+                            <div class="title-blue">
+                                <h5>Consulting Services</h4>
+                            </div>
+                            <div class="content content-darkgray">
+                                <p class="mt-4 line-clamp-3">Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis.</p>
+                            </div>
+                            <div class="link-green mt-4">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" max-h-[272px] h-[272px]"> 
+                        <img src="../assets/images/grey-img.png" class="h-full w-full object-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================== PROJECT SECTION ========================================================== -->
+
+        <section class="project_section py-20 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4">
+            <div class="flex justify-between items-center md:flex-col md:items-start fade-up">
+                <div>
+                    <div class="preheading">
+                        <span>Our Projects</span>
+                    </div>
+                    <div class="title-black">
+                        <h3 class="font-[600] mt-4">Our Recent Works</h3>
+                    </div>
+                    <div class="content content-darkgray font-[400] mt-4 max-w-[543px]">
+                        <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis id velit sed scelerisque.</p>
+                    </div>
+                </div>
+                <!-- <a href="#">
+                    <div class="btn btn-ylw-border md:mt-5">More Projects</div>
+                </a> -->
+                <div class="md:mt-5">
+                    <a href="#" class="btn btn-ylw-border">
+                       More Projects
+                    </a>
+                </div>
+            </div>
+
+            <!-- video 1  -->
+                <div class="mt-16 md:mt-8 zig-zag-content w-full flex md:flex-col gap-x-4 md:gap-x-0 h-full fade-up">
+                    <div class="w-8/12 md:w-full">
+                        <div class="flex flex-col">
+                            <div class="pt-[47.22%] md:w-full relative">
+                                <video id="videoElement1" class="object-cover w-full h-full absolute top-0 left-0" loop>
+                                    <source src="../assets/videos/sample-video.mp4" type="video/mp4">
+                                </video>
+                                <div class="sm:absolute playButton1 hidden sm:flex bg-[#4646B6]/80 p-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                                    <img src="../assets/images/Polygon 1.svg" class="w-5 h-5" alt="">
+                                </div>
+                            </div>
+                            <div class="flex w-full h-full">
+                                <div class="w-3/12 bg-[#4646B6] flex items-center justify-center sm:hidden playButton1 cursor-pointer">
+                                    <img src="../assets/images/Polygon 1.svg" class="w-6 sm:w-4 h-6 sm:h-4" alt="">
+                                </div>
+                                <div class="w-full bg-[#0C0C1C] videosection">
+                                    <div class="grid grid-cols-3 w-full py-10 sm:py-6 px-10 lg:px-8 sm:px-0 sm:text-center">
+                                        <div class="flex justify-center border-r border-r-[#fff]">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">100 KWP</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Power Output</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center border-r border-r-[#fff]">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">300 KWH</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Battery Capacity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">120 KW</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Capacity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-4/12 md:w-full md:mt-4 pl-8 lg:pl-4 md:pl-0">
+                        <div class="max-w-[326px] md:max-w-full">
+                            <div class="preheading_two">
+                                <span>Off-Grid Systems</span>
+                            </div>
+                            <div class="title-black mt-4 font-[600]">
+                                <h4>Emei Solar Panel Station 2018</h4>
+                            </div>
+                            <div class="content content-darkgray mt-4">
+                                <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#80809A] h-[1px] my-5 max-w-[326px] md:max-w-full"></div>
+                        <div class="flex flex-col">
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/map-pin.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Location : Mount Emei, China</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/move.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Total Area : 500 square meters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/user.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Client : CHN Company</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content-darkgray mt-5 max-w-[326px] md:max-w-full">
+                            <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.</p>
+                        </div>
+                        <div class="link-green mt-5">
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- video 2  -->
+                <div class="mt-16 md:mt-8 zig-zag-content w-full flex md:flex-col-reverse gap-x-4 md:gap-x-0 h-full fade-up">
+                    <div class="w-4/12 md:w-full md:mt-4 pr-8 lg:pr-4 md:pr-0">
+                        <div class="max-w-[326px] md:max-w-full">
+                            <div class="preheading_two">
+                                <span>Grid-tied Systems</span>
+                            </div>
+                            <div class="title-black mt-4 font-[600]">
+                                <h4>Graciela Roof Solar Panel 2020</h4>
+                            </div>
+                            <div class="content content-darkgray mt-4">
+                                <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#80809A] h-[1px] my-5 max-w-[326px] md:max-w-full"></div>
+                        <div class="flex flex-col">
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/map-pin.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Location : The Boltons, London</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/move.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Total Area : 50 square meters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/user.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Client : Graciela Messer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content-darkgray mt-5 max-w-[326px] md:max-w-full">
+                            <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.</p>
+                        </div>
+                        <div class="link-green mt-5">
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                    <div class="w-8/12 md:w-full">
+                        <div class="flex flex-col">
+                            <div class="pt-[47.22%] md:w-full relative">
+                                <video id="videoElement1" class="object-cover w-full h-full absolute top-0 left-0" loop>
+                                    <source src="../assets/videos/sample-video.mp4" type="video/mp4">
+                                </video>
+                                <div class="sm:absolute hidden sm:flex bg-[#4646B6] p-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 playButton2">
+                                    <img src="../assets/images/Polygon 1.svg" class="w-5 h-5" alt="">
+                                </div>
+                            </div>
+                            <div class="flex w-full h-full">
+                                <div class="w-3/12 bg-[#4646B6] flex items-center justify-center sm:hidden playButton2 cursor-pointer">
+                                    <img src="../assets/images/Polygon 1.svg" class="w-6 sm:w-4 h-6 sm:h-4" alt="">
+                                </div>
+                                <div class="w-full bg-[#0C0C1C] videosection">
+                                    <div class="grid grid-cols-3 w-full py-10 sm:py-6 px-10 lg:px-8 sm:px-0 sm:text-center">
+                                        <div class="flex justify-center border-r border-r-[#fff]">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">100 KWP</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Power Output</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center border-r border-r-[#fff]">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">300 KWH</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Battery Capacity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">120 KW</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Capacity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+            <!-- video 3  -->
+                <div class="mt-16 md:mt-8 zig-zag-content w-full flex md:flex-col gap-x-4 md:gap-x-0 h-full fade-up">
+                    <div class="w-8/12 md:w-full">
+                        <div class="flex flex-col">
+                             <div class="pt-[47.22%] md:w-full relative">
+                                <video id="videoElement1" class="object-cover w-full h-full absolute top-0 left-0" loop>
+                                    <source src="../assets/videos/sample-video.mp4" type="video/mp4">
+                                </video>
+                                <div class="sm:absolute hidden sm:flex bg-[#4646B6] p-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+                                    <img src="../assets/images/Polygon 1.svg" class="w-5 h-5" alt="">
+                                </div>
+                            </div>
+                            <div class="flex w-full h-full">
+                                <div class="w-3/12 bg-[#4646B6] flex items-center justify-center sm:hidden playButton3 cursor-pointer">
+                                    <img src="../assets/images/Polygon 1.svg" class="w-6 sm:w-4 h-6 sm:h-4" alt="">
+                                </div>
+                                <div class="w-full bg-[#0C0C1C] videosection">
+                                    <div class="grid grid-cols-3 w-full py-10 sm:py-6 px-10 lg:px-8 sm:px-0 sm:text-center">
+                                        <div class="flex justify-center border-r border-r-[#fff]">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">100 KWP</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Power Output</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center border-r border-r-[#fff]">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">300 KWH</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Battery Capacity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <div class="content flex flex-col w-fit">
+                                                <div class="title-white">
+                                                    <h6 class="font-[600]">120 KW</h6>
+                                                </div>
+                                                <div class="content-white mt-2 sm:mt-1">
+                                                    <p>Capacity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-4/12 md:w-full md:mt-4 pl-8 lg:pl-4 md:pl-0">
+                        <div class="max-w-[326px] md:max-w-full">
+                            <div class="preheading_two">
+                                <span>Off-Grid Systems</span>
+                            </div>
+                            <div class="title-black mt-4">
+                                <h4 class="font-[600]">Keller Farm Solar <br>Panel 2022</h4>
+                            </div>
+                            <div class="content content-darkgray mt-4">
+                                <p>Aliquet dignissim erat habitasse aliquet <br> tincidunt phasellus ultrices.</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#80809A] h-[1px] my-5 max-w-[326px] md:max-w-full"></div>
+                        <div class="flex flex-col">
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/map-pin.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Location : Meuro, Neuhardenberg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/move.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Total Area : 500 square meters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons-list">
+                                <div class="flex items-center">
+                                    <div class="p-2 bg-[#4646B6] flex items-center justify-center me-3">
+                                        <img src="../assets/images/user.svg" alt="">
+                                    </div>
+                                    <div class="content content-black">
+                                        <p>Client : Patrick Keller</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content-darkgray mt-5 max-w-[326px] md:max-w-full">
+                            <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.</p>
+                        </div>
+                        <div class="link-green mt-5">
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div> 
+        </section>
+
+        <!-- ========================================================== LOGO SECTION ========================================================== -->
+        
+        <section class="logo_section bg-[#4646B6] py-20 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4">
+            <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 fade-up">
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-r border-r-[#4B4BEB] xs:border-r-0 ">
+                    <img src="../assets/images/Logo-1.svg" alt="">
+                </div>
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-r border-r-[#4B4BEB] md:border-r-0 xs:border-t xs:border-t-[#4B4BEB]">
+                    <img src="../assets/images/Logo-3.svg" alt="">
+                </div>
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-r border-r-[#4B4BEB] md:border-t md:border-t-[#4B4BEB] xs:border-r-0">
+                    <img src="../assets/images/Logo-5.svg" alt="">
+                </div>
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center md:border-t md:border-t-[#4B4BEB]">
+                    <img src="../assets/images/Logo-7.svg" alt="">
+                </div>
+            </div>
+            <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 fade-up">
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-r border-t border-t-[#4B4BEB] border-r-[#4B4BEB] xs:border-r-0">
+                    <img src="../assets/images/Logo-2.svg" alt="">
+                </div>
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-r border-t border-t-[#4B4BEB] border-r-[#4B4BEB] md:border-r-0">
+                    <img src="../assets/images/Logo-4.svg" alt="">
+                </div>
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-r border-t border-t-[#4B4BEB] border-r-[#4B4BEB] xs:border-r-0">
+                    <img src="../assets/images/Logo-6.svg" alt="">
+                </div>
+                <div class="flex h-40 sm:h-36 w-full justify-center items-center border-t border-t-[#4B4BEB]">
+                    <img src="../assets/images/Logo-8.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================== HOW IT WORK SECTION ========================================================== -->
+
+        <section class="how_it_work_section py-20 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4">
+            <div class="flex justify-between items-center md:flex-col md:items-start fade-up">
+                <div>
+                    <div class="preheading">
+                        <span>How It Works</span>
+                    </div>
+                    <div class="title-black font-[600] mt-4">
+                        <h3>Let’s See How It Works</h3>
+                    </div>
+                    <div class="content content-darkgray font-[400] mt-4 max-w-[543px]">
+                        <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis id velit sed scelerisque.</p>
+                    </div>
+                </div>
+                <!-- <a href="#">
+                    <div class="btn btn-ylw-border md:mt-5">Learn More</div>
+                </a> -->
+                <div class="md:mt-5">
+                    <a href="#" class="btn btn-ylw-border">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="w-full flex md:flex-col-reverse gap-x-3 mt-16 md:mt-8">
+                <div class="w-6/12 md:w-full h-full pr-16 lg:pr-4 md:pr-0 md:mt-10 ">
+                    <div class="flex flex-col h-full ">
+                        <div class="flex w-full timeline_div fade-in">
+                            <div class="h-inherit relative">
+                                <div class="bg-[#4646B6] p-[20px]">
+                                    <div class="title-white">
+                                        <h4>01</h4>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 -z-10 left-1/2 h-inherit">
+                                    <img src="../assets/images/Line 18.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ms-14 md:ms-10 sm:ms-7 xs:ms-4">
+                                <div>
+                                    <div class="title-black">
+                                        <h4 class="leading-none">Consultation Project</h4>
+                                    </div>
+                                    <div class="content content-darkgray mt-5 max-w-[396px]">
+                                        <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis velit sed scelerisque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full timeline_div fade-in">
+                            <div class="h-full">
+                                <div class="bg-[#4646B6] p-[20px]">
+                                    <div class="title-white">
+                                        <h4>02</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-14 md:ms-10 sm:ms-7 xs:ms-4">
+                                <div>
+                                    <div class="title-black">
+                                        <h4 class="leading-none">Installation System</h4>
+                                    </div>
+                                    <div class="content content-darkgray mt-5 max-w-[396px]">
+                                        <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis velit sed scelerisque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full timeline_div fade-in">
+                            <div class="h-full">
+                                <div class="bg-[#4646B6] p-[20px]">
+                                    <div class="title-white">
+                                        <h4>03</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-14 md:ms-10 sm:ms-7 xs:ms-4">
+                                <div>
+                                    <div class="title-black">
+                                        <h4 class="leading-none">Projects Execution</h4>
+                                    </div>
+                                    <div class="content content-darkgray mt-5 max-w-[396px]">
+                                        <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis velit sed scelerisque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-6/12 md:w-full h-[590px]">
+                    <img src="../assets/images/solar_farm.jpeg" class="object-cover h-full w-full md:w-auto sm:w-full" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-14 md:py-10 sm:py-8  px-32 xl:px-8 md:px-8 sm:px-4 bg-[#0C0C1C]">
+        <div class="grid gap-x-6 md:gap-x-6 md:gap-y-8 w-full grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+            <div class="flex flex-col sm:items-center sm:text-center min-w-[367px] lg:min-w-0 mx-auto fade-in">
+                <div>
+                    <img src="../assets/images/nav-logo.png" alt="">
+                </div>
+                <div class="content content-white mt-4 sm:flex sm:justify-center">
+                   <p>Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices. Aenean sed elit mattis sagittis id velit sed scelerisque.</p>
+                </div>
+                <div class="mt-4 flex space-x-2">
+                    <a href="https://x.com/">
+                        <div class="flex justify-center items-center bg-[#4B4BEB] hover:bg-[#D5EE36]/85 transition-all duration-300 ease-in-out p-2 rounded-full">
+                            <img src="../assets/images/twitter.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <div class="flex justify-center items-center bg-[#4B4BEB] hover:bg-[#D5EE36]/85 transition-all duration-300 ease-in-out p-2 rounded-full">
+                            <img src="../assets/images/instagram.svg" alt="">
+                        </div>
+                    </a>
+                   <a href="https://www.youtube.com/">
+                        <div class="flex justify-center items-center bg-[#4B4BEB] hover:bg-[#D5EE36]/85 transition-all duration-300 ease-in-out p-2 rounded-full">
+                            <img src="../assets/images/youtube.svg" alt="">
+                        </div>
+                   </a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:items-start sm:items-center sm:text-center fade-in">
+                <div class="content content-white">
+                    <p class="font-[600] uppercase tracking-widest">Company</p>
+                    <ul class="footer_links mt-6">
+                        <li class="footer-nav-link"><a href="#">Home</a></li>
+                        <li class="footer-nav-link"><a href="#">About Us</a></li>
+                        <li class="footer-nav-link"><a href="#">Services</a></li>
+                        <li class="footer-nav-link"><a href="#">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col sm:items-center sm:text-center fade-in">
+                <div class="content content-white">
+                    <p class="font-[600] uppercase tracking-widest">Help</p>
+                    <ul class="footer_links mt-6">
+                        <li class="footer-nav-link"><a href="#">Customer Support</a></li>
+                        <li class="footer-nav-link"><a href="#">How It Works</a></li>
+                        <li class="footer-nav-link"><a href="#">Terms & Condition</a></li>
+                        <li class="footer-nav-link"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col sm:items-center sm:text-center fade-in">
+                <form action="" class="sm:w-full sm:px-10">
+                    <div class="content content-white">
+                        <p class="uppercase font-[600] tracking-widest">Subscribe to Newsletter</p>
+                    </div>
+                    <div class="w-full mt-6">
+                        <input type="email" name="" id="" class="p-4 md:p-3 rounded-full placeholder:text-[#0C0C1C]/40 w-full placeholder:text-sm" placeholder="Enter Your Email">
+                    </div>
+                    <button class="btn btn-ylw mt-6">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="bg-[#80809A] h-[1px] w-full mt-10">
+        </div>
+        <div class="flex justify-between mt-10">
+            <div class="content content-darkgray">
+                <p class="tracking-wider">Copyright © 2023 Mentarie</p>
+            </div>
+            <div class="content content-darkgray">
+                <p class="tracking-wider">Designed by TokoTema</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
